@@ -1,0 +1,25 @@
+.input-login {         		
+  text-align: center;
+  align-content: center;	
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.btn-outline-primary {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.card-img-top{	
+  width: 35%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+#card-login {
+  margin-left: 35%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}

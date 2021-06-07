@@ -1,0 +1,102 @@
+   <style type="text/css">
+                
+                .table-header {
+                margin-left: 3% !important;
+                padding-top: 2%;
+                }
+                .body-content{
+                margin: auto;
+                margin-top: 2%;
+                }
+                .label-title{
+                    margin-left: 10%;
+                }
+                  #btn-save-mobile{
+                    display: none;
+                }
+                
+                /*desktop*/
+                @media screen and (max-width: 768px) {
+                /* Force table to not be like tables anymore */
+                table, thead, tbody, th, td, tr {
+                display: block;
+                }
+                /* Hide table headers (but not display: none;, for accessibility) */
+                thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+                }
+                tr {
+                margin: 0 0 1rem 0;
+                }
+                
+                tr:nth-child(odd) {
+                background: #ccc;
+                }
+                
+                td {
+                /* Behave  like a "row" */
+                border: none;
+                border-bottom: 1px solid #eee;
+                position: relative;
+                padding-left: 50%;
+                }
+                td:before {
+                /* Now like a table header */
+                position: absolute;
+                /* Top/left values mimic padding */
+                
+                left: 6px;
+                vertical-align: middle;
+                padding-right: 10px;
+                white-space: nowrap;
+                }
+                /*
+                Label the data
+                You could also use a data-* attribute and content for this. That way "bloats" the HTML, this way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow.
+                */
+                td:nth-of-type(1):before { content: "no."; }
+                td:nth-of-type(2):before { content: "User Code"; }
+                td:nth-of-type(3):before { content: "Username"; }
+                td:nth-of-type(4):before { content: "ชื่อ-นามสกุล"; }
+                td:nth-of-type(5):before { content: "นามสกุล"; }
+                td:nth-of-type(6):before { content: "รูปภาพ"; }
+                
+                #table-inform td {
+                text-align: right;
+                vertical-align: middle;
+                }
+                #btn-back,#btn-save{
+                    display: none !important;
+                }
+                 #btn-save-mobile{
+                    display: block !important;
+                     margin-left: 4% !important;
+                     width: 95%;
+
+                }
+                 .body-content{
+                margin: auto !important;
+                align-items: center;
+                
+                }
+                #bg-select , #checkbox-all{
+                    margin-left: 4% !important;
+                }
+
+              
+                input{
+                    margin-left: 3% !important;
+                }
+                td p {
+                margin-left: 40%;
+                text-align: left;
+                }
+                .table-header h1{
+                font-size: 30px !important;
+                margin-top: 1%;
+                }
+                
+                }
+                </style>

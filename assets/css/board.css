@@ -1,0 +1,256 @@
+td {
+    word-wrap: break-word;
+}
+* {
+	box-sizing: border-box;
+	}
+	/*#ui-datepicker-div{
+		background-color: #fff;
+		width: 20%;
+	}*/
+		.row .search {
+			display: flex;
+			width: 100%;
+			padding-left: 5px !important;
+			margin-left: 10px;
+			
+			
+		}
+		#search-btn{
+	vertical-align: bottom !important; 
+	margin-top: auto;
+}
+	
+		#header-table{
+			margin-left: 2%;
+		}
+		.table-header {
+			margin-left: 3% !important;
+			padding-top: 2%;
+		}
+		#searchBoard {
+			
+			height: 35px;
+			
+			
+		}
+		#btn {
+			width: 12%;
+			height: 35px;
+			display: inline-block;
+			
+		}
+		#table-inform th {
+			text-align: center;
+		vertical-align: middle;
+		font-size: 16px;
+		background-color: #ededed;
+		}#table-inform td {
+			text-align: center;
+			vertical-align: middle;
+			font-size: 16px;
+			background-color: #fff;
+		}
+		.progress.progress-xs{
+			height: 25px;
+		}
+		#badge-table {
+			width: 100%;
+			height: 100%;
+			font-size: 16px;
+			
+		}
+		/*h2.badge.bg-danger {
+			font-size: 15px !important;
+			margin-left: 4% !important;
+			margin-right:  1% !important;
+		}
+		h2.badge.bg-success {
+			font-size: 15px !important;
+			margin-left: 4% !important;
+			margin-right:  2% !important;
+		}
+		h2.badge.badge-info.right {
+			font-size: 18px !important;
+			margin-left: 4% !important;
+			margin-right:  2% !important;
+		}*/
+		#btn.btn-outline-secondary.dropdown-toggle.pull-right{
+			width:16%;
+		}
+		}
+		#search-filter{
+			/*width: 8rem;*/
+			margin-left: 2%;
+			float: left;
+			display: inline-flex;
+			border-radius: .35rem .35rem .35rem .35rem;
+		}
+		
+		.form-group-filter{
+			display: flex;
+			margin-top: 1rem;
+		}
+		
+		.label-filter{
+			font-size: 1.5rem;
+			margin-left: 1%;
+			display: flex;
+		}
+	.btn-reset{
+	width: auto;
+	display: inline-flex;
+	}
+	#print-btn{
+		float: right;
+	}
+		.form-control.searchBox{
+			border-radius: .35rem;
+			padding-left: 0px !important
+			
+		}
+	#filter {
+		padding: 0 !important;
+		margin-right: 1%;
+		
+	}
+	.gj-datepicker .gj-datepicker-bootstrap .gj-unselectable .input-group{
+		margin: 23px !important;
+	}
+		
+	.card-footer.clearfix{
+		float: right;
+	}
+	.fas.fa-filter{
+		margin-top: 5px;
+		margin-left: 10px;
+		padding-right: 5px;
+	}
+	#btn-searchBoard-filter{
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	line-height: 1.5;
+	font-size: 1rem;
+	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+	height: 7.5;
+	position: relative;
+	z-index: 2;
+	border-radius: .35rem .35rem .35rem .35rem;
+	
+	}
+
+	@media screen and (max-width: 768px) {
+			/* Force table to not be like tables anymore */
+			table, thead, tbody, th#table, td#table, tr#table {
+				display: block;
+			}
+			/* Hide table headers (but not display: none;, for accessibility) */
+			thead tr {
+				position: absolute;
+				top: -9999px;
+				left: -9999px;
+			}
+tr {
+margin: 0 0 1rem 0;
+border: 1px solid #a3a3a3 !important;
+}
+tr:nth-child(odd) {
+background: #fff;
+}
+			td#table {
+				/* Behave  like a "row" */
+				border: none;
+				border-bottom: 1px solid #eee;
+				position: relative;
+				padding-left: 50%;
+			}
+			td#table:before {
+				/* Now like a table header */
+				position: absolute;
+				/* Top/left values mimic padding */
+				
+				left: 6px;
+				vertical-align: middle;
+				padding-right: 10px;
+				white-space: nowrap;
+			}
+			/*
+			Label the data
+	You could also use a data-* attribute and content for this. That way "bloats" the HTML, this way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow.
+			*/
+		td#table:nth-of-type(1):before { content: "ลำดับ"; }
+		td#table:nth-of-type(2):before { content: "ประเภท"; }
+		td#table:nth-of-type(3):before { content: "รายละเอียด"; }
+		td#table:nth-of-type(4):before { content: "วันที่เริ่ม"; }
+		td#table:nth-of-type(4):before { content: "เกินเวลา"; }
+		td#table:nth-of-type(5):before { content: "สถานะ"; }
+		td#table:nth-of-type(6):before { content: "ผู้ร้องขอ"; }
+		td#table:nth-of-type(7):before { content: "ผู้รับเรื่อง"; }
+		td#table:nth-of-type(8):before { content: "วันดำเนินการทั้งหมด"; }
+	
+	  .text_xs{
+  	text-align: right !important;
+  }
+    
+    td > #table {
+   
+    text-align: right !important;
+    }
+   
+
+   #datepicker{
+   	
+   }
+
+	
+		.badge.bg-danger {
+			font-size: 16px !important;
+			margin-left: 2% !important;
+			margin-right:  1% !important;
+		}
+		.badge.bg-success {
+			font-size: 16px !important;
+			margin-left: 4% !important;
+			margin-right:  2% !important;
+		}
+		.badge.badge-info.right {
+			font-size: 16px !important;
+			margin-left: 4% !important;
+			margin-right:  2% !important;
+		}
+	#header-searchBoard {
+			display: flex;
+			width: 100%;
+			padding-right: 0 !important;
+			
+			
+			
+		}
+	#search-filter{
+			display: flex;
+			/*width: 6rem;*/
+			text-align: center;
+			font-size: 14px;
+		}
+	.fas.fa-filter{
+		margin-top: 5px;
+		margin-left: 5px;
+		padding-right: 5px;
+	}
+	.col-lg-5.col-sm-8 {
+		display: inline-flex;
+	}
+	.label-filter {
+		vertical-align: middle;
+	}
+
+	
+	.input-group-text{
+		margin: 0px 0px 0 0 !important;
+		
+	}
+	.col-12{
+		padding-left: 4% !important;
+	}
+	}

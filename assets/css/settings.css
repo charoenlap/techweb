@@ -1,0 +1,124 @@
+<style type="text/css">
+		.table-header {
+		margin-left: 3% !important;
+		padding-top: 2%;
+		}
+		.body-content{
+		margin: auto;
+		margin-top: 2%;
+		}
+		.label-title{
+		margin-left: 10%;
+		}
+		#btn-save-mobile{
+		display: none;
+		}
+		#form{
+		margin-top: 3%;
+		}
+		.form-group{
+			margin-top: 2%;
+		}
+		#box-card{
+			padding: .50% 1.5% .50% 1.5%  !important;
+		}
+		#btn-import{
+			margin-top: 2%;
+		}
+		#btn-export,#btn-import{
+			
+			width: 40%
+		}
+		label {
+			font-size: 14.5px;
+			vertical-align: middle;
+			text-align: right;
+			margin-top: 1%;
+		}
+		/*desktop*/
+		@media screen and (max-width: 768px) {
+		/* Force table to not be like tables anymore */
+		table, thead, tbody, th, td, tr {
+		display: block;
+		}
+		/* Hide table headers (but not display: none;, for accessibility) */
+		thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+		}
+		tr {
+		margin: 0 0 1rem 0;
+		}
+		tr:nth-child(odd) {
+		background: #fff;
+		}
+		td {
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee;
+		position: relative;
+		padding-left: 50%;
+		}
+		td:before {
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		left: 6px;
+		vertical-align: middle;
+		padding-right: 10px;
+		white-space: nowrap;
+		}
+		label{
+			text-align: left;
+		}
+		/*
+		Label the data
+		You could also use a data-* attribute and content for this. That way "bloats" the HTML, this way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow.
+		*/
+		td:nth-of-type(1):before { content: ""; }
+		td:nth-of-type(2):before { content: ""; }
+		td:nth-of-type(3):before { content: ""; }
+		td:nth-of-type(4):before { content: ""; }
+		
+		#table-inform td {
+		text-align: right;
+		vertical-align: middle;
+		}
+		#btn-back,#btn-save{
+		display: none !important;
+		}
+		#btn-save-mobile{
+		display: block !important;
+		margin: auto;
+		width: 90%;
+		}
+		.body-content{
+		margin: auto !important;
+		align-items: center;
+		}
+		#bg-select , #checkbox-all{
+		margin-left: 4% !important;
+		width: 90%;
+		}
+		#Group-Name{
+		margin-left: 4% !important;
+		width: 90%;
+		}
+		#checkbox-all{
+		text-align: center;
+		}
+		#btn-export,#btn-import{
+			float: right;
+			width: 100%
+		}
+		td p {
+		margin-left: 40%;
+		text-align: left;
+		}
+		.table-header h1{
+		font-size: 30px !important;
+		margin-top: 1%;
+		}
+		}
+		</style>

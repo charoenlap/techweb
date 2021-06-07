@@ -1,0 +1,266 @@
+<style type="text/css">
+#header-searchBoard {
+display: flex;
+margin-left: 1%;
+}
+#header-table{
+}
+#delete_xs{
+	display: none;
+}
+.table-header {
+margin-left: 3% !important;
+padding-top: 2%;
+}
+#searchBoard {
+width: 100% ;
+height: 35px;
+display: flex;
+}
+#filter {
+padding: 0 !important;
+margin-right: 1%;
+}
+.form-control.searchBox{
+border-radius: .35rem;
+padding-left: 0px !important
+}
+/*#btn {
+width: 12%;
+height: 35px;
+}*/
+#table-inform th {
+text-align: center;
+vertical-align: middle;
+font-size: 16px;
+background-color: #ededed;
+}
+#table-inform td {
+text-align: center;
+vertical-align: middle;
+font-size: 16px;
+background-color: #fff;
+}
+.form-check-input {
+width: 16px;
+height: 16px;
+margin: auto !important;
+text-align: center !important;
+vertical-align: middle !important;
+position: relative !important;
+}
+#GroupName{
+text-align: left !important;
+vertical-align: middle;
+	font-size: 16px;
+}
+.progress.progress-xs{
+height: 25px;
+}
+#badge-table {
+width: 90%;
+height: 50%;
+font-size: 18px;
+}
+h2.badge.bg-danger {
+font-size: 18px !important;
+margin-left: 4% !important;
+margin-right:  1% !important;
+}
+h2.badge.bg-success {
+font-size: 18px !important;
+margin-left: 4% !important;
+margin-right:  2% !important;
+}
+h2.badge.badge-info.right {
+font-size: 18px !important;
+margin-left: 4% !important;
+margin-right:  2% !important;
+}
+#operation-btn{
+clear: both;
+}
+#btn.btn-outline-secondary.dropdown-toggle.pull-right{
+width:16%;
+}
+#search-filter{
+/*width: 8rem;*/
+margin-left: 2%;
+float: left;
+display: inline-flex;
+border-radius: .35rem .35rem .35rem .35rem;
+}
+.row .search {
+display: flex;
+width: 100%;
+padding-left: 5px !important;
+margin-left: 10px;
+}
+/*.card-header-filter{
+display: inline-flex;
+}*/
+.form-group-filter{
+display: flex;
+margin-top: 1rem;
+}
+.label-filter{
+font-size: 1.5rem;
+margin-left: 1%;
+}
+#btn-search{
+margin-left: 2%;
+float: left;
+display: flex;
+}
+/* .form-control.form-control{
+border-radius: .35rem 0 0 .35rem;
+margin-left: 1.5%;
+}*/
+#btn-searchBoard {
+background-color: #fff;
+background-clip: padding-box;
+border: 1px solid #ced4da;
+line-height: 1.5;
+font-size: 1rem;
+transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+padding: .375rem .75rem;
+height: 7.5;
+position: relative;
+z-index: 2;
+border-radius: 0rem .35rem .35rem 0rem;
+}
+#btn-searchBoard-filter{
+background-color: #fff;
+border: 1px solid #ced4da;
+line-height: 1.5;
+font-size: 1rem;
+transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+height: 7.5;
+width: 100%;
+position: relative;
+z-index: 2;
+border-radius: .35rem .35rem .35rem .35rem;
+}
+/*desktop*/
+@media screen and (max-width: 768px) {
+/* Force table to not be like tables anymore */
+table, thead, tbody, th, td, tr {
+display: block;
+}
+/* Hide table headers (but not display: none;, for accessibility) */
+thead tr {
+position: absolute;
+top: -9999px;
+left: -9999px;
+}
+tr {
+margin: 0 0 ๅrem 0;
+}
+tr:nth-child(odd) {
+background: none;
+}
+td {
+/* Behave  like a "row" */
+border: none;
+border-bottom: 1px solid #eee;
+position: relative;
+padding-left: 50%;
+}
+td:before {
+/* Now like a table header */
+position: absolute;
+/* Top/left values mimic padding */
+left: 6px;
+vertical-align: middle;
+padding-right: 10px;
+white-space: nowrap;
+}
+/*
+Label the data
+You could also use a data-* attribute and content for this. That way "bloats" the HTML, this way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow.
+*/
+/*td:nth-of-type(1):before { content: "no."; }*/
+td:nth-of-type(2):before { content: "Group Name"; }
+td:nth-of-type(3):before { content: ""; }
+/*td:nth-of-type(4):before { content: "ชื่อ-นามสกุล"; }
+td:nth-of-type(5):before { content: "นามสกุล"; }
+td:nth-of-type(6):before { content: "รูปภาพ"; }
+*/
+#table-inform td {
+text-align: right;
+vertical-align: middle;
+}
+#GroupName{
+text-align: right !important;
+vertical-align: middle;
+	font-size: 16px;
+}
+.td-select{
+display: none;
+}
+#delete_lg{
+	display: none;
+}
+#delete_xs{
+	display: block;
+}
+.add{
+	margin-right: 3%;
+	text-align: right !important;
+	float: right;
+}
+
+td p {
+margin-left: 40%;
+text-align: left;
+}
+.table-header h1{
+	font-size: 30px !important;
+	margin-top: 1%;
+}
+#badge-table {
+width: 22%;
+height: 50%;
+font-size: 15px;
+}
+h2.badge.bg-danger {
+font-size: 18px !important;
+margin-left: 2% !important;
+margin-right:  1% !important;
+}
+h2.badge.bg-success {
+font-size: 18px !important;
+margin-left: 4% !important;
+margin-right:  2% !important;
+}
+h2.badge.badge-info.right {
+font-size: 18px !important;
+margin-left: 4% !important;
+margin-right:  2% !important;
+}
+#header-searchBoard {
+display: flex;
+width: 100%;
+}
+#search-filter{
+display: flex;
+/*width: 6rem;*/
+text-align: center;
+font-size: 14px;
+}
+.fas.fa-filter{
+margin-top: 5px;
+margin-left: 5px;
+padding-right: 5px;
+}
+#btn-searchBoard-filter{
+margin-left: 3px;
+}
+.col-lg-5.col-sm-8 {
+display: inline-flex;
+}
+.label-filter {
+vertical-align: middle;
+}
+}
+</style>

@@ -1,0 +1,113 @@
+* {
+box-sizing: border-box;
+}
+
+.headerContacts {
+height: 40px;
+text-align: center;
+font-size: 24px;
+}
+.row-1{
+display: none;
+}
+#calendar {
+height: 230px;
+}
+.Contacts {
+width: auto;
+height: auto;
+display: block;
+}
+.direct-chat-contacts{
+transform: translate(0,0) ;
+}
+#Pie-card {
+transform: translate(100,0);
+max-width: 49.7% !important;
+height: auto;
+}
+.card.card-danger {
+float: left;
+flex: 50%;
+clear: both;
+}
+#con-New{
+background-color: #95db5e !important;
+}
+#con-Cancel{
+background-color: #f48345 !important;
+}
+#con-Problem{
+background-color: #ff2c2c !important;
+}
+#con-Complain{
+background-color: #9733d0 !important;
+}
+#con-Stock{
+background-color: #a5a5a1 !important;
+}
+#box-footer-New{
+background-color: #59c948 !important;
+}
+#box-footer-Cancel{
+background-color: #ec702c !important;
+}
+#box-footer-Problem{
+background-color: #f21b1b !important;
+}
+#box-footer-Complain{
+background-color: #8a23c5 !important;
+}
+#box-footer-Stock{
+background-color: #858583 !important;
+}
+.ion {
+color: #f4f4f4;
+}
+.col-4{
+  float: left;
+}
+.col-8{
+  float: left;
+}
+.row{
+  display: flex;
+}
+.row:after {
+      content: "";
+      display: table;
+      clear: both;
+      }
+@media screen and (max-width: 600px) {
+
+.col-lg-6 .col-6 {
+display: block;
+clear: both;
+}
+.row.content2{
+display: block;
+column-count: 1;
+-moz-column-count: 1;
+-webkit-column-count: 1;
+margin-left: 1rem;
+}
+.row.right{
+clear: both;
+}
+.card.employee {
+margin: auto; /* Added */
+float: none; /* Added */
+margin-bottom: 10px; /* Added */
+}
+.col-4.employee {
+  clear: both;
+  float: left;
+}
+.col-8.employee {
+  clear: both;
+  float: left;
+}
+
+
+
+}

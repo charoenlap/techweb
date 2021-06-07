@@ -1,0 +1,127 @@
+* {
+box-sizing: border-box;
+}
+.row{
+display: flex;
+}
+.row.page{
+	column-count: 1;
+-moz-column-count: 1;
+-webkit-column-count: 1;
+}
+	.header{
+		margin-left: 1rem;
+	}
+	.row.right {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+	.col-6.right{
+		float: left;
+		clear: both;
+		flex: 50%;
+	}
+	
+label{
+	
+		margin: 0 1% 1% 0;
+		width: 100%;
+		vertical-align: middle;
+		text-align: right;
+	}
+/*.table {
+	width: 100%;
+	border-collapse: collapse;
+	border: 2px solid black;
+	margin-left: 1rem;
+	
+}
+td {
+	
+	background-color: #fff;
+	border-color: #000;
+	border: 2px solid black !important;
+}
+td.topic {
+	width: 30%;
+	background-color: #d1d1d1;
+	border-color: #000;
+	border: 2px solid black;
+	}*/
+.button-edit {
+	float: right;
+}
+#email {
+	margin-top: 2px;
+}
+.custom-file-label{
+	vertical-align: middle;
+	text-align: left !important;
+}
+@media screen and (max-width: 480px) {
+.row{
+display: block;
+}
+.right{
+	
+	clear: both;
+		
+}
+.col-md-9 {
+	float: left;
+	clear: both;
+	width: 90%;
+}
+#col-right{
+	width: 100%;
+	clear: both;
+}
+.button-edit{
+	vertical-align: middle;
+	float: right;
+	margin: 0 !important;
+	display: block;
+}
+.row.email {
+	display: block;
+	clear: both;
+}
+#email-input{
+	
+	float: left !important;
+}
+/*.form-control.right {
+width: 75% !important;
+}
+*/
+label{
+	
+		margin: 0 1% 1% 0;
+		width: 100%;
+		vertical-align: middle;
+		text-align: left;
+	}
+.col-12.align-self-center{
+	display: flex;
+	flex-flow: column;
+}
+.row.edit{
+	text-align: center;
+	margin-bottom: 1rem;
+}
+.btn.btn-primary.modal_edit {
+	width: 40%;
+}
+.row.right.btn{
+	text-align: center;
+	margin-bottom: 1rem;
+}
+.col-12.btn{
+	display: flex;
+	flex-flow: column;
+}
+.btn-col-right{
+
+}
+
+}
