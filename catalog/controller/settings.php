@@ -6,8 +6,9 @@
 				// $setting = $this->model('settings');
 				// $cmd_git = DOCUMENT_ROOT." git add -A";
 				// echo DOCUMENT_ROOT;exit();
-				$msg = "cd '".DOCUMENT_ROOT."' && git add -A && git commit -m 'update' && git push";
+				$msg = "cd '".DOCUMENT_ROOT."' && git config --global user.name 'Charoenlap' && git config --global user.email charoenlap88@gmail.com && git add -A && git commit -m 'update' && git push";
 				echo shell_exec($msg); 
+				echo $msg;
 				exit();
 				// $this->redirect('settings/update&result=success');
 			}else{
