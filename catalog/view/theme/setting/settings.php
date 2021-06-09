@@ -327,7 +327,7 @@
 				<div class="modal-content">
 					<div class="modal-header">
 						<h5 class="modal-title"></h5>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">x</button>
 					</div>
 					<div class="modal-body">
 						<h7>ยืนยันการตั้งค่า</h7>
@@ -338,7 +338,7 @@
 								<label></label>
 							</div>
 							<div class="item-form">
-								<button type="button" class="btn btn-danger" id="btn-modal"> ยกเลิก </button>
+								<button type="button" class="btn btn-danger" id="" data-dismiss="modal"> ยกเลิก </button>
 								<button type="button" class="btn btn-primary" id="btn-modal-add-form"> ยืนยัน </button>
 							</div>
 						</div>
@@ -347,12 +347,7 @@
 			</div>
 		</div>
 		<!-- submit modal -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-		<script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
-		<link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
-		<!-- modal --><script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script><!-- modal -->
+		
 		<script type="text/javascript">
 			$(document).on('click','#btn-modal-add-form',function(e){
 				$('#form-setting').submit();

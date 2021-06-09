@@ -328,12 +328,12 @@
                       <p><?php echo $menu_setting_layout; ?></p>
                     </a>
                   </li>
-                  <!-- <li class="nav-item">
+                  <li class="nav-item">
                     <a href="./index.php?route=settings/user" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p><?php echo $menu_setting_user; ?></p>
                     </a>
-                  </li> -->
+                  </li>
                 </ul>
               </li>
               <?php } ?>
