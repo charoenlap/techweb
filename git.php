@@ -5,7 +5,7 @@
 		'git status',
 		'git add .',
 		"git commit -m '".time()." Commit by php code'",
-		'git push'
+		'git push https://charoenlap:Charoenlap89@github.com/charoenlap/techweb'
 	);
 	// Run the commands for output
 	$output = '';
