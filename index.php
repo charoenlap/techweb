@@ -11,7 +11,7 @@
 
 	if(isset($_GET['lang'])){
         $language_name = $_GET['lang'];
-        $_SESSION['language_name'] = $language_name;
+        $_SESSION['language_name'] = $language_name; 
     }else{
     	if(isset($_SESSION['language_name'])){
 	    	$language_name = $_SESSION['language_name'];
