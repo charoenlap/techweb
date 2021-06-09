@@ -334,6 +334,12 @@
                       <p><?php echo $menu_setting_user; ?></p>
                     </a>
                   </li>
+                  <li class="nav-item">
+                    <a href="./index.php?route=settings/update" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Update</p>
+                    </a>
+                  </li>
                 </ul>
               </li>
               <?php } ?>

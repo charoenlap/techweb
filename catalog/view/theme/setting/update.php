@@ -6,7 +6,7 @@
 			<div class="row">
 				<div class="col-12">
 					<div class="table-header" style="float: left; margin: 2.5% 0 0 3%;"><h1>จัดการระบบ</h1></div>
-					<button id="btn-save" class="btn btn-info save" style="margin-left: auto;  margin: 3% 1% 1% 0%; float: right;"><i class="far fa-save" style="font-size: 19px;"></i></button>
+					<button id="btn-save" class="btn btn-info save" style="margin-left: auto;  margin: 3% 1% 1% 0%; float: right;"><i class="far fa-save" style="font-size: 19px;"></i> Update</button>
 				</div>
 				
 			</div>
@@ -18,6 +18,16 @@
 								<fieldset>
 									<div class="form-group">
 										<div class="row">
+											<div class="col-xs-12">
+												<div>Resule panel update</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-xs-12">
+												<div id="panel_result"></div>
+											</div>
+										</div>
+										<!-- <div class="row">
 											<label class="col-xs-4 col-sm-3 col-lg-2 control-label" for="input-mail-protocol"><span data-toggle="tooltip" title="" data-original-title="">Version</span></label>
 											<div class="col-xs-8 col-sm-9 col-lg-10">
 												<span>V. </span><span id="version"></span>
@@ -40,7 +50,7 @@
 											<div class="col-xs-8 col-sm-9 col-lg-10">
 												<div class="panel"></div>
 											</div>
-										</div>
+										</div> -->
 									</div>
 								</fieldset>
 							</div>
@@ -77,7 +87,24 @@
 		</div>
 		<script type="text/javascript">
 			$(document).on('click','#btn-modal-add-form',function(e){
-				$('#form-setting').submit();
+				$.ajax({
+					url: 'git.php',
+					type: 'GET',
+					// dataType: 'default: Intelligent Guess (Other values: xml, json, script, or html)',
+					data: {type: 'pull'},
+				})
+				.done(function(html) {
+					$('#panel_result').html(html);
+					console.log("success");
+				})
+				.fail(function() {
+					console.log("error");
+				})
+				.always(function() {
+					console.log("complete");
+				});
+				$('#confirm_settings').modal('hide');
+				// $('#form-setting').submit();
 			});
 		$(function () {
 		$('[data-toggle="tooltip"]').tooltip()
