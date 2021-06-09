@@ -18,12 +18,6 @@
 					'git add -A',
 					"git commit -m '".time()." Commit by php code'",
 					'git push'
-					// 'git reset --hard HEAD',
-					// 'git pull',
-					// 'git status',
-					// 'git submodule sync',
-					// 'git submodule update',
-					// 'git submodule status',
 				);
 				// Run the commands for output
 				$output = '';
