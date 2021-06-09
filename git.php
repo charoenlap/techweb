@@ -13,7 +13,7 @@
 		// Run it
 		$tmp = exec($command);
 		// Output
-		$output .= "<span style=\"color: #6BE234;\">\$</span> <span style=\"color: #729FCF;\">{$command}\n</span>";
+		$output .= "<span style=\"color: #6BE234;\">\$</span> <span style=\"color: #729FCF;\">{$command}\n</span><br>";
 		$output .= htmlentities(trim($tmp)) . "\n";
 	}
 	echo $output;
