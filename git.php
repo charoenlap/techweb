@@ -5,7 +5,7 @@
 			// 'echo $PWD',
 			// 'whoami',
 			// 'git status',
-			'git add .',
+			'git add .', 
 			"git commit -m '".time()." Commit by php code'",
 			'git push https://charoenlap:Charoenlap89@github.com/charoenlap/techweb'
 		);
