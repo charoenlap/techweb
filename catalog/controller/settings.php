@@ -34,6 +34,7 @@
 					$output .= "<span style=\"color: #6BE234;\">\$</span> <span style=\"color: #729FCF;\">{$command}\n</span>";
 					$output .= htmlentities(trim($tmp)) . "\n";
 				}
+				echo $output;
 				// Make it pretty for manual user access (and why not?)
 				// $msg = "cd '".DOCUMENT_ROOT."' && git config --global user.name 'Charoenlap' && git config --global user.email charoenlap88@gmail.com && git add -A && git commit -m '".time()." Commit by php code' && git push";
 				// echo shell_exec($msg); 
