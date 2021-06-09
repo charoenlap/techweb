@@ -3,7 +3,7 @@
 		'echo $PWD',
 		'whoami',
 		'git status',
-		'git add -A',
+		'git add .',
 		"git commit -m '".time()." Commit by php code'",
 		'git push'
 	);
