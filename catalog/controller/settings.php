@@ -6,8 +6,8 @@
 				// $setting = $this->model('settings');
 				// $cmd_git = DOCUMENT_ROOT." git add -A";
 				// echo DOCUMENT_ROOT;exit();
-				echo $msg = "cd '/Users/charoenlapanatamsombat/iCloud Drive (Archive)/Documents/htdocs/techweb' && git add -A && git commit -m 'update' && git push";
-				// echo shell_exec($msg);
+				$msg = "cd '".DOCUMENT_ROOT."' && git add -A && git commit -m 'update' && git push";
+				echo shell_exec($msg);
 				exit();
 				// $this->redirect('settings/update&result=success');
 			}else{
