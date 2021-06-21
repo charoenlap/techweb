@@ -5,7 +5,7 @@
 		<div class="content-fluid">
 			<div class="row">
 				<div class="col-12">
-					<div class="table-header" style="float: left; margin: 2.5% 0 0 3%;"><h1>จัดการระบบ</h1></div>
+					<div class="table-header" style="float: left; margin: 2.5% 0 0 3%;"><h1>System Update</h1></div>
 					<button id="btn-save" class="btn btn-info save" style="margin-left: auto;  margin: 3% 1% 1% 0%; float: right;"><i class="far fa-save" style="font-size: 19px;"></i> Update</button>
 				</div>
 				
@@ -19,26 +19,26 @@
 									<div class="form-group">
 										<div class="row">
 											<div class="col-xs-12">
-												<div>Resule panel update</div>
+												<h5>Resule panel update</h5>
 											</div>
 										</div>
 										<div class="row">
 											<div class="col-xs-12">
-												<div id="panel_result"></div>
+												<div id="panel_result" class="text-success"></div>
 											</div>
 										</div>
-										<!-- <div class="row">
+										<div class="row">
 											<label class="col-xs-4 col-sm-3 col-lg-2 control-label" for="input-mail-protocol"><span data-toggle="tooltip" title="" data-original-title="">Version</span></label>
 											<div class="col-xs-8 col-sm-9 col-lg-10">
 												<span>V. </span><span id="version"></span>
 											</div>
 										</div>
-										<div class="row">
+										<!-- <div class="row">
 											<label class="col-xs-4 col-sm-3 col-lg-2 control-label" for="input-mail-protocol"><span data-toggle="tooltip" title="" data-original-title="">URL Download</span></label>
 											<div class="col-xs-8 col-sm-9 col-lg-10">
 												<input type="text" class="form-control">
 											</div>
-										</div>
+										</div> -->
 										<div class="row">
 											<label class="col-xs-4 col-sm-3 col-lg-2 control-label" for="input-mail-protocol"><span data-toggle="tooltip" title="" data-original-title="">Upload</span></label>
 											<div class="col-xs-8 col-sm-9 col-lg-10">
@@ -50,7 +50,7 @@
 											<div class="col-xs-8 col-sm-9 col-lg-10">
 												<div class="panel"></div>
 											</div>
-										</div> -->
+										</div>
 									</div>
 								</fieldset>
 							</div>

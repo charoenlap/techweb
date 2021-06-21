@@ -1,14 +1,26 @@
 <?php
 	$base = str_replace('required', '', __DIR__);
-	// System config 
-	// exit();
+	
+	define('HOST','localhost');
+
     define('DEFAULT_LANGUAGE',$language_name);
 	define('DEFAULT_LIMIT_PAGE','10');
 
 	define('DEFAULT_PAGE','home');
 	define('WEB_NAME','Tech Web');
 	define('DB','mysqli');
-	if($_SERVER['HTTP_HOST']=="localhost"){
+
+
+	if(!empty(HOST)){
+		define('MURL','http://'.HOST);
+		define('DOCUMENT_ROOT',$_SERVER['DOCUMENT_ROOT']);
+		// Config DB localhost
+		define('PREFIX', 'm_');
+		define('DB_HOST','localhost');
+		define('DB_USER','root');
+		define('DB_PASS','');
+		define('DB_DB','fsoftpro_techweb');
+	}else if($_SERVER['HTTP_HOST']=="localhost"){
 		define('MURL','http://localhost/techweb/');
 		define('DOCUMENT_ROOT',$_SERVER['DOCUMENT_ROOT'].'/techweb/');
 		// Config DB localhost
